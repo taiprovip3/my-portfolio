@@ -1,8 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion"; // thêm animation mượt mà
-import myStorageLogo from '../../assets/images/MyStorage-logo.png';
-import inventoryMailLogo from '../../assets/images/InventoryMail-logo.jpg';
+import myStorageLogo from '../assets/images/mystorage-preview1.png';
+import inventoryMailLogo from '../assets/images/inventorymail-preview1.jpg';
 import type { FC } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface Project {
   id: number;
@@ -27,6 +28,8 @@ const projects: Project[] = [
 ];
 
 const ProjectPage: FC = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="flex-1 flex">
         <section className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 px-4 py-10">
@@ -36,6 +39,7 @@ const ProjectPage: FC = () => {
             whileHover={{ scale: 1.05, rotate: 1 }}
             whileTap={{ scale: 0.98 }}
             transition={{ type: "spring", stiffness: 300 }}
+            onClick={() => navigate(`/projects/${project.name}`)}
             >
             <Card
                 className="bg-black border border-green-400/30 hover:border-green-500 shadow-md hover:shadow-green-500/20 transition duration-300"

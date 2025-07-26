@@ -19,11 +19,11 @@ export const Header: FC<HeaderProps> = ({ className }) => {
             {/* Three */}
             <div className='order-1'>
                 <nav className="p-1 flex justify-center space-x-1 text-lime-300 text-sm">
-                    {["Home", "Projects", "Resume"].map((label) => (
+                    {["Home", "Projects"].map((label) => (
                     <a
                         key={label}
                         href={label === "Home" ? "/" : `/${label.toLowerCase()}`}
-                        className="relative group wood-bg rounded-xs px-3 py-2 font-bold text-lg"
+                        className="relative group wood-bg rounded-xs px-8 py-2 font-bold text-lg"
                     >
                         {label}
                         <span className="absolute left-1/2 -translate-x-1/2 top-full mt-1 hidden group-hover:block w-[40px] h-[40px]">
