@@ -11,7 +11,7 @@ export const Header: FC<HeaderProps> = ({ className }) => {
         <header className="flex">
             {/* One */}
             <div className='order-3 p-1 flex justify-items-center items-center'>
-                <span className='text-lime-400 justify-self-center text-lg font-extrabold'> Welcome to my UFO</span>
+                <span className='text-lime-400 justify-self-center text-lg font-extrabold'></span>
                 <img src={alienHeadImg} alt="" className='w-8 h-8' />
             </div>
             {/* Two */}

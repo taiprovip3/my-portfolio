@@ -7,6 +7,7 @@ import inventoryMailPreview3 from '../assets/images/inventorymail-preview3.jpg';
 import inventoryMailPreview4 from '../assets/images/inventorymail-preview4.jpg';
 
 import { Link, Element } from 'react-scroll';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const myStoragePreviews = [
   inventoryMailPreview1, inventoryMailPreview2, inventoryMailPreview3, inventoryMailPreview4
@@ -20,7 +21,7 @@ const InventoryMailPage: FC = () => {
       <aside className="md:w-1/4 p-6 border-r border-lime-500/30 sticky top-0 h-fit">
         <h2 className="text-lime-400 text-3xl font-bold mb-4">📚 Contents</h2>
         <ul className="space-y-2 text-lg text-lime-300">
-          <li><Link to="overview" smooth={true} duration={1000} className="hover:text-green-500 hover:cursor-pointer">👽 Overview</Link></li>
+          <li><Link to="overview" smooth={true} duration={1000} className="hover:text-green-500 hover:cursor-pointer">🧐 Overview</Link></li>
           <li><Link to="features" smooth={true} duration={1000} className="hover:text-green-500 hover:cursor-pointer">🛠 Feature</Link></li>
           <li><Link to="installation" smooth={true} duration={1000} className="hover:text-green-500 hover:cursor-pointer">⚙️ Installation</Link></li>
           <li><Link to="preview" smooth={true} duration={1000} className="hover:text-green-500 hover:cursor-pointer">🖼 Preview</Link></li>
@@ -28,6 +29,7 @@ const InventoryMailPage: FC = () => {
           <li><Link to="dependencies" smooth={true} duration={1000} className="hover:text-green-500 hover:cursor-pointer">🏷️ Commands</Link></li>
           <li><Link to="permissions" smooth={true} duration={1000} className="hover:text-green-500 hover:cursor-pointer">⛔ Permissions</Link></li>
           <li><Link to="download" smooth={true} duration={1000} className="hover:text-green-500 hover:cursor-pointer">⤵️ Download</Link></li>
+          <li><Link to="commitment" smooth={true} duration={1000} className="hover:text-green-500 hover:cursor-pointer">✊ Commitment & Conclusion</Link></li>
         </ul>
       </aside>
 
@@ -150,6 +152,43 @@ const InventoryMailPage: FC = () => {
             >
               Download
             </Button>
+          </section>
+        </Element>
+
+        {/* Commitment */}
+        <Element name="commitment">
+          <section>
+            <h2 className="text-2xl text-lime-400 font-semibold mb-4">✊ Commitments & Conclusions</h2>
+            <Accordion
+              type="single"
+              collapsible
+              className="w-full"
+              defaultValue="item-1"
+            >
+              <AccordionItem value="item-1">
+                <AccordionTrigger>Commitment</AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-balance">
+                  <p className="text-gray-300">
+                    I guarantee that this plugin source code does not contain malicious or harmful code, conflicting with other components.
+                  </p>
+                  <p className="text-gray-300">
+                    I do use bstats running in the background but only to collect information about the number of servers using the plugin. Absolutely do not steal any other information of the server.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger>Product Infomation</AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-balance">
+                  <p className="text-gray-300">
+                    This plugin may have some errors or bug unpredictable. Beacause it's only be developed by a one person (me). Some testcases maybe i have been missed!
+                    But please don't rush to rate this 1* :(. Tell me proplems, i gonna find solutions!
+                  </p>
+                  <p className="text-gray-300">
+                    Rate a good review this plugin and leave a comment. I'll appreciate it so much! Again Thanks for using my product.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </section>
         </Element>
       </main>
