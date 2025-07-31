@@ -1,7 +1,7 @@
 import './App.css';
 import fullNameSmImg from './assets/images/fullname.png';
 import softwareDevImg from './assets/images/software-developer6.png';
-import avatar4 from "./assets/images/avatar2.jpg"
+import avatar2 from "./assets/images/avatar2.jpg"
 import { motion } from 'framer-motion';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from './components/ui/hover-card';
 import { Avatar, AvatarFallback, AvatarImage } from './components/ui/avatar';
@@ -33,7 +33,7 @@ function App() {
                 transition={{ duration: 0.5, type: "spring", stiffness: 300 }} // Thời gian chuyển động là 0.5 giây
                 onClick={() => setProfileModalOpen(true)}
               >
-                <img src={avatar4} alt="" className='w-64 h-64 object-cover rounded-full outline-none shadow-md border-none' />
+                <img src={avatar2} alt="" className='w-64 h-64 object-cover rounded-full outline-none shadow-md border-none' />
                 <img src={fullNameSmImg} alt="" />
                 <div className='text-lime-400 text-xs'>(alias: AlbertEsin, taiproduaxe, nhinguyenmc)</div>
                 <img src={softwareDevImg} alt="" />
@@ -64,7 +64,6 @@ function App() {
         <div className="basis-1/2 content-center">
           <div className='justify-items-center'>
             <img src="https://images.squarespace-cdn.com/content/v1/55070640e4b02d883732a32c/93180440-910b-4eac-afcb-a0644a979de2/Space+Spaceship+GIF+by+Dyanapyehchek.gif?format=2500w" alt="" className='w-16 h-16 border-none' />
-            {/* <Button className='border-1 border-black rounded-none bg-lime-400 text-black hover:text-white'>My Resume</Button> */}
           </div>
         </div>
       </div>
