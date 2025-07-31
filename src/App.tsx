@@ -1,16 +1,9 @@
 import './App.css';
 import fullNameSmImg from './assets/images/fullname.png';
-import faceImg from './assets/images/face-preview.png';
 import softwareDevImg from './assets/images/software-developer6.png';
-import avatar1 from "./assets/images/avatar1.jpg"
-import avatar2 from "./assets/images/avatar2.jpg"
-import avatar3 from "./assets/images/avatar1.jpg"
 import avatar4 from "./assets/images/avatar2.jpg"
-import avatar5 from "./assets/images/avatar5.jpg"
-import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from './components/ui/carousel';
 import { motion } from 'framer-motion';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from './components/ui/hover-card';
-import { Button } from './components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from './components/ui/avatar';
 import React from 'react';
 import { ProfileModal } from './pages/ProfileModal';

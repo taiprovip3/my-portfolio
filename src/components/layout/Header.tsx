@@ -6,7 +6,7 @@ export interface HeaderProps {
     className?: string,
 }
 
-export const Header: FC<HeaderProps> = ({ className }) => {
+export const Header: FC<HeaderProps> = () => {
     return (
         <header className="flex">
             {/* One */}

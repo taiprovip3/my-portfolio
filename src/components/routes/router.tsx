@@ -1,20 +1,11 @@
-import { createBrowserRouter, Outlet } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import { MainLayout } from "../layout/MainLayout";
 import App from "@/App";
 import ProjectPage from "@/pages/Project";
 import Resume from "@/pages/Resume";
 import MyStoragePage from "@/pages/MyStorage";
 import InventoryMailPage from "@/pages/InventoryMail";
-
-const ProjectsLayout = () => (
-  <MainLayout>
-    {/*
-      ProjectPage sẽ hiển thị nội dung chính của /projects
-      Outlet sẽ hiển thị các trang con như /projects/mystorage
-    */}
-    <Outlet />
-  </MainLayout>
-);
+import { ProjectsLayout } from "../layout/ProjectLayout";
 
 export const router = createBrowserRouter([
     {
