@@ -17,6 +17,15 @@ const myStoragePreviews = [
 ];
 
 const MyStoragePage: FC = () => {
+
+  const handleDownload = (fileName: string) => {
+    const url = `http://localhost:8080/download/${fileName}`;
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = fileName;
+    link.click();
+  };
+
   return (
     <div className="flex flex-col md:flex-row text-white">
       {/* Sidebar - Table of contents */}
@@ -155,6 +164,7 @@ const MyStoragePage: FC = () => {
             <Button
               variant="outline"
               className="bg-lime-600 hover:bg-lime-500 text-3xl font-extrabold p-8 rounded-lg shadow-lg hover:cursor-pointer"
+              onClick={() => handleDownload('MyStorage.jar')}
             >
               Download
             </Button>
@@ -179,7 +189,7 @@ const MyStoragePage: FC = () => {
                   </p>
                   <p className="text-gray-300">
                     I do use bstats running in the background but only to collect information about the number of servers using the plugin. Absolutely do not steal any other information of the server.
-                  </p>
+                  </p> 
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
