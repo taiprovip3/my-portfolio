@@ -4,7 +4,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(4, 31, 21, 1) 50%, 
 }
 
 .wood-bg {
-    background-image: url('./assets/images/alien-bg.jpg');
+    background-image: url('./assets/images/bg-alien.jpg');
     background-size: contain;
 }
 
