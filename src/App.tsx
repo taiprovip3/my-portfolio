@@ -1,7 +1,7 @@
 import './App.css';
 import fullNameSmImg from './assets/images/fullname.png';
 import softwareDevImg from './assets/images/software-developer6.png';
-import avatar2 from './assets/images/avatar2.jpg';
+import avatar2 from './assets/images/face.jpg';
 import { motion } from 'framer-motion';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from './components/ui/hover-card';
 import { Avatar, AvatarFallback, AvatarImage } from './components/ui/avatar';
