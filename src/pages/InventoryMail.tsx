@@ -16,9 +16,8 @@ const myStoragePreviews = [
 const InventoryMailPage: FC = () => {
 
   const handleDownload = (fileName: string) => {
-    const url = `http://localhost:8080/download/${fileName}`;
     const link = document.createElement("a");
-    link.href = url;
+    link.href = '/InventoryMail.jar';
     link.download = fileName;
     link.click();
   };
