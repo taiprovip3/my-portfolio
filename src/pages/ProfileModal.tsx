@@ -35,9 +35,8 @@ export const ProfileModal: FC<ProfileModalProps> = ({ open, onOpenChange }) => {
           <section>
             <h3 className="text-lime-300 font-semibold">🛠 Skills</h3>
             <ul className="list-disc list-inside text-sm text-gray-400">
-              <li>React, TypeScript, TailwindCSS, ShadCN</li>
-              <li>Node.js, Express, Java, MongoDB, Mysql</li>
-              <li>Framer Motion, GSAP, Three.js</li>
+              <li>React (native), TypeScript, TailwindCSS, ShadCN</li>
+              <li>Node.js, Express, Java, MongoDB, MySQL</li>
             </ul>
           </section>
           <section>
@@ -68,7 +67,7 @@ export const ProfileModal: FC<ProfileModalProps> = ({ open, onOpenChange }) => {
           {/* View Resume Button */}
           <div className="pt-4 flex justify-end">
             <a href="/resume" rel="noopener noreferrer">
-                <Button variant="outline" className="bg-lime-400 border-lime-400 text-black hover:bg-lime-600 hover:text-black">View My Resume</Button>
+                <Button variant="outline" className="bg-lime-400 border-lime-400 text-black hover:bg-lime-600 hover:text-black hover:cursor-pointer">View My Resume</Button>
             </a>
           </div>
         </div>

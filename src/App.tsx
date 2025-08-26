@@ -1,7 +1,7 @@
 import './App.css';
 import fullNameSmImg from './assets/images/fullname.png';
 import softwareDevImg from './assets/images/software-developer6.png';
-import face from './assets/images/face.jpg';
+import face from './assets/images/avatar2.jpg';
 import ufoGif from './assets/images/ufo2.gif';
 import { motion } from 'framer-motion';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from './components/ui/hover-card';
